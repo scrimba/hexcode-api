@@ -17,7 +17,7 @@ tag app
 		<header>
 			<svg[w:200px h:auto us:none] src='./scrimba.svg'>
 			<h1[us:none]> "API to get a set of random hex color codes"
-			<p[us:none]> "Send a tet request to this url {<code> document.location.href} with url param count = number of colors to get and 'Content-Type': 'application/json' header."
+			<p[us:none]> "Send a request to this url {<code> document.location.href} with url param count = number of colors to get and 'Content-Type': 'application/json' header."
 			<hr>
 			<form$form action='/' methoD="GET" @submit.prevent=retrieve>
 				<label for="count-input"> "Count: "
