@@ -21,12 +21,9 @@ def generateColors count
 	return colors
 
 # catch-all route that returns our index.html
-app.get(/.*/) do(req,res)
+app.get('/hexcolors') do(req,res)
 	const count = req.query.count
-
-	res.format
-		json: do res.json({colors: generateColors(count)})
-		html: do res.send index.body
-
+	# console.log "request direct", req.path
+	res.json({colors: generateColors(count)})
 
 imba.serve app.listen(process.env.PORT or 3000)
