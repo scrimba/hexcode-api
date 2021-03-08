@@ -1,6 +1,6 @@
 import express from 'express'
 import index from './app/index.html'
-import cors frmo 'cors'
+import cors from 'cors'
 
 const app = express!
 const alphabet = "0123456789ABCDEF"
